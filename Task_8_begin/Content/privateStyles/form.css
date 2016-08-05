@@ -18,6 +18,8 @@ input {
 
 .autor-block {
     border: 1px solid black;
+    height: 150px;
+    overflow: auto;
     padding: 2px;
     border-radius: 2px;
 }
