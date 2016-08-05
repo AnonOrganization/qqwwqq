@@ -18,9 +18,26 @@ input {
 
 .autor-block {
     border: 1px solid black;
+    padding: 2px;
     border-radius: 2px;
 }
 
 input[type="radio"]:checked+label {
     background-color: gray;
+}
+
+.login input {
+    display: inline-block;
+}
+
+.er-msg {
+    color: red;
+}
+
+.minuts {
+    width: 60px;
+}
+
+.date {
+    width: 145px;
 }
