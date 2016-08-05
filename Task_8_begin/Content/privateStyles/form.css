@@ -1,0 +1,26 @@
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    display: block;
+    background-color: white;
+}
+
+input {
+    max-width: 300px;
+}
+
+.desc-textarea {
+    resize: none;
+    width: 500px;
+}
+
+.autor-block {
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+input[type="radio"]:checked+label {
+    background-color: gray;
+}

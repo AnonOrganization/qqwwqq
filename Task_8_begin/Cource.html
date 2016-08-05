@@ -1,15 +1,88 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Cource</title>
-	<meta charset="utf-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/privateStyles/form.css" rel="stylesheet" />
 </head>
-<body>
 
+<body>
+    <header></header>
+    <div class="container">
+        <div class="row">
+
+            <form action="" method="POST" class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label class="control-label col-xs-2" for="Name">Название</label>
+                    <div class="col-xs-10">
+                        <input type="text" class="form-control" id="Name" placeholder="Название">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-xs-2" for="inputDescription">Описание</label>
+                    <div class="col-xs-10">
+                        <textarea name="Description" id="inputDescription" class="form-control desc-textarea" rows="3" required="required"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-xs-2" for="Date">Дата</label>
+                    <div class="col-xs-10">
+                        <input type="date" class="form-control" id="Date" placeholder="Input field">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-xs-2" for="duration">Продолжительность</label>
+                    <div class="col-xs-10">
+                        <input type="text" class="form-control" id="duration" placeholder="Минуты">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-xs-2" for="">Список авторов</label>
+                    <div class="col-xs-10">
+                        <div class="col-xs-2 autor-block">
+                            <input type="radio" name="pushkin" value="pushkin" id="pushkin">
+                            <label for="pushkin">Пушкин</label>
+
+                            <input type="radio" name="Petr" value="Petr" id="Petr">
+                            <label for="Petr">Petr</label>
+
+                            <input type="radio" name="Lermont" value="Lermont" id="Lermont">
+                            <label for="Lermont">Lermont</label>
+                        </div>
+                        <div class="col-xs-1">
+                            <button type="button" class="btn btn-default glyphicon glyphicon-chevron-right"></button>
+                            <button type="button" class="btn btn-default glyphicon glyphicon-chevron-left"></button>
+                        </div>
+                        <div class="col-xs-2 autor-block">
+                            <input type="radio" name="Ivanov" value="Ivanov" id="Ivanov">
+                            <label for="Ivanov">Kovan</label>
+
+                            <input type="radio" name="KovanPetr" value="Kovan" id="Kovan">
+                            <label for="Kovan">Kovan</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-xs-offset-2 col-xs-10">
+                        <button type="submit" class="btn btn-success">Сохранить</button>
+                        <button type="button" class="btn btn-danger">Отмена</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
     <script src="Scripts/jquery-3.1.0.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
 </body>
+
 </html>
