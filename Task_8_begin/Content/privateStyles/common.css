@@ -1,1 +1,12 @@
-﻿
+﻿.row{
+    margin-top:15px;
+}
+.filter{
+    /*height:100%;*/
+    width:40%;
+    border:2px solid #000000;
+}
+
+i{   
+    padding-right:5px;
+}
