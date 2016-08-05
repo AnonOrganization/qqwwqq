@@ -24,3 +24,11 @@ input {
 input[type="radio"]:checked+label {
     background-color: gray;
 }
+
+.login input {
+    display: inline-block;
+}
+
+.er-msg {
+    color: red;
+}
